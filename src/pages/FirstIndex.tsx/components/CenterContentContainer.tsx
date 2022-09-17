@@ -53,6 +53,7 @@ const WorkPhoto = styled.div`
     div {
       width: 450px;
       height: 450px;
+      flex-wrap: nowrap;
     }
   }
 
@@ -60,6 +61,25 @@ const WorkPhoto = styled.div`
     div {
       width: 350px;
       height: 350px;
+    }
+  }
+  @media ${device.tablet} {
+    div {
+      margin: 0 0.3rem;
+    }
+  }
+  @media ${device.mobileL} {
+    flex-wrap: nowrap;
+    div {
+      width: 175px;
+      height: 175px;
+    }
+  }
+  @media ${device.mobileS} {
+    flex-wrap: nowrap;
+    div {
+      width: 150px;
+      height: 150px;
     }
   }
 `;
@@ -96,6 +116,18 @@ const LittlePhoto = styled.div`
       margin: 0 0.66rem;
       padding: 0 2rem 3rem 2rem;
     }
+  }
+
+  @media ${device.mobileL} {
+    > div {
+      width: 300px;
+      height: 300px;
+      margin: 1.5rem 0;
+    }
+  }
+
+  @media ${device.mobileL} {
+    justify-content: center;
   }
 `;
 const LittlePhotoItem = styled.div`

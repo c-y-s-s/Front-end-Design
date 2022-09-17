@@ -15,6 +15,9 @@ const LogoItemContainer = styled.div`
   @media ${device.tablet} {
     flex-wrap: wrap;
   }
+  @media ${device.mobileL} {
+    justify-content: center;
+  }
 `;
 const LogoItem = styled.div`
   padding: 3.5rem 5rem;

@@ -8,6 +8,10 @@ const News = styled.div`
   @media ${device.tablet} {
     flex-wrap: wrap;
   }
+
+  @media ${device.mobileL} {
+    margin-top: 4rem;
+  }
 `;
 const Compute = styled.img`
   min-width: 50%;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import BigNewYork from "../img/background.jpg";
-
+import { device } from "../../../components/device";
 const CenterPhotoContainer = styled.div``;
 const Photo = styled.div`
   background: linear-gradient(
@@ -28,6 +28,13 @@ const Photo = styled.div`
     color: #fff;
     letter-spacing: 2px;
     font-weight: 300;
+  }
+  @media ${device.mobileL} {
+    div {
+      padding: 0 1rem;
+      text-align: center;
+      margin: 0.25rem 0;
+    }
   }
 `;
 

@@ -14,6 +14,11 @@ const NavContainer = styled.nav`
     display: block;
     text-align: center;
   }
+
+  @media ${device.tablet} {
+    display: block;
+    padding: 1.8rem 0rem 0.8rem 0;
+  }
 `;
 const NavTitle = styled.div`
   font-size: 2rem;
@@ -29,6 +34,13 @@ const NavOptions = styled.ul`
   }
   @media ${device.laptop} {
     justify-content: space-around;
+    padding: 0 0rem;
+  }
+  @media ${device.mobileL} {
+    padding: 0 0rem;
+    li {
+      padding: 0 0rem;
+    }
   }
 `;
 
