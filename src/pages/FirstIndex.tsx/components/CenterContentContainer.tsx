@@ -33,20 +33,23 @@ const CenterContent = styled.div`
 `;
 const WorkPhoto = styled.div`
   display: flex;
-  margin-top: 7rem;
+  margin-top: 5rem;
   flex-wrap: wrap;
+  justify-content: center;
   div {
     width: 650px;
     height: 630px;
-    margin: 0 1rem;
+    margin: 1rem 1rem;
     background-size: cover;
     border-radius: 5px;
   }
   div:nth-child(1) {
     background-image: url("${Work01}");
+    margin: 1rem 1rem;
   }
   div:nth-child(2) {
     background-image: url("${Work02}");
+    margin: 1rem 0rem;
   }
   @media ${device.laptopL} {
     margin-top: 4rem;
@@ -65,7 +68,8 @@ const WorkPhoto = styled.div`
   }
   @media ${device.tablet} {
     div {
-      margin: 0 0.3rem;
+      margin: 0.7rem 0.3rem;
+      justify-content: center;
     }
   }
   @media ${device.mobileL} {
@@ -87,6 +91,7 @@ const LittlePhoto = styled.div`
   display: flex;
   margin-top: 7rem;
   flex-wrap: wrap;
+  justify-content: center;
   > div {
     width: 420px;
     height: 550px;
@@ -117,7 +122,11 @@ const LittlePhoto = styled.div`
       padding: 0 2rem 3rem 2rem;
     }
   }
-
+  @media ${device.tablet} {
+    > div {
+      margin: 0.35rem 0.45rem;
+    }
+  }
   @media ${device.mobileL} {
     > div {
       width: 300px;
